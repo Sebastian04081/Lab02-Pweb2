@@ -28,4 +28,6 @@ function getDay(numberDay = date.getDay()) {
 	}
 
     console.log(day);
+
+    document.querySelector(".day").textContent = day;
 }
