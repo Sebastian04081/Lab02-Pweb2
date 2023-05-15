@@ -4,6 +4,12 @@ function getCode() {
 	const url = document.querySelector("#url").value;
     console.log(url);
 
+    // Verifica si el campo de URL está vacío
+    if (url === "") {
+        alert("Por favor, ingrese la URL de la sesión.");
+        return;
+    }
+
     // Dividir la cadena del URL en la primera aparición del separador de la cadena de consulta (?)
     // https://meet.google.com/pxg-cvfx-don?pli=1&authuser=0
     const codeWithQueryParams = url.split("?")[0];
