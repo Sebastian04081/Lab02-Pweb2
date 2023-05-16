@@ -10,7 +10,7 @@
     <body>
         <h1>Obtener código de sesión de Google Meet</h1>
 	    <p>Ingresa el URL de la sesión:</p>
-        <input type="text" id='url'>
+        <input type="text" id='url' onkeydown="checkKey(event)">
         <button onclick="getCode()">Obtener código</button>
 	    <p>El código de la sesión es:</p>
 	    <p id="code"></p>

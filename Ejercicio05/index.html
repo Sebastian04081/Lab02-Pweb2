@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 05</title>
+    </head>
+    <body>
+        <h1>Calculadora de Suma de Valores</h1>
+
+        <form id="valueForm" onsubmit="createTable();">
+            <label for="numValues">Cantidad de Valores:</label>
+            <input type="number" name="numValues" required>
+            <button type="submit">Crear Tabla</button>
+        </form>
+    
+        <table id="valueTable"></table>
+    
+        <button id="calculateButton" style="display: none;">Calcular Suma</button>
+    
+        <div id="sumOutput"></div>
+    </body>
+</html>
