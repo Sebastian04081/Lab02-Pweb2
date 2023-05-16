@@ -13,6 +13,11 @@ function reverseString(){
 
     console.log(reversedString);
 
-    document.querySelector("#answer").innerHTML = reversedString;
+    document.querySelector("#answer").innerHTML = "Texto invertido: " + reversedString;
 }
 
+function checkKey(event) {
+    if (event.keyCode === 13) {
+      reverseString();
+    }
+}

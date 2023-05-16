@@ -10,10 +10,9 @@
     <body>
         <h1>Ingrese un texto</h1>
 
-        <input type="text" id="input">
+        <input type="text" id="input" onkeydown="checkKey(event)">
         <button onclick='reverseString()'>Invertir la palabra</button><br>
-
-        <p id="answer"></p>
+        <p id="answer">Texto invertido: </p>
 
         <a href="../index.html">Volver al Inicio</a>
     </body>
