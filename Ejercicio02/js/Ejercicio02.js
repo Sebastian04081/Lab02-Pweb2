@@ -4,7 +4,6 @@
 * en otro elemento HTML, utilizando los métodos split(), reverse() 
 * y join() de JavaScript.
 */
-
 function reverseString(){
     let str = document.querySelector("#input").value;
     console.log(str);
