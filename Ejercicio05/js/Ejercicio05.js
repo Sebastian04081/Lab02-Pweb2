@@ -3,8 +3,6 @@ const numberTable = [];
 // Función para crear la tabla dinámicamente
 function createTable() {
     const numValues = document.querySelector('#num').value;
-    
-    console.log(numValues);
 
     document.querySelector("#input").innerHTML = `<table id="valueTable"></table>`;
 
@@ -13,14 +11,18 @@ function createTable() {
         document.querySelector("#valueTable").innerHTML += "<tr>" + numberTable[i] + "</tr>";
     }
 
-    console.log(numberTable);
-
     document.querySelector("#valueTable").innerHTML += "<br/><button id = \"buttonsuma\" onclick = \"calculateSum()\">Sumar</button>";
 }
 
 // Función para calcular la suma de los valores ingresados
 function calculateSum() {
+    var suma = 0;
+	
+    for (let j = 0; j < numberTable.length; j++) {
+   	    suma += numberTable[j];
+    }
 
+    document.querySelector("#buttonsuma").outerHTML = "<h3>La suma de los numeros es: " + suma + "</h3>";
 }
 
 function checkKey(event) {
